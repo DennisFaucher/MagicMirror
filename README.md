@@ -5,7 +5,7 @@ Description of files:<br>
 <ul>
 <li>config.js: This is the file that you edit to define the layout of your screen. The page for each module describes the variables that can be used for that module. Make sure you match your curly braces. Sometimes it is easier to duplicate another module in config.js and edit from there. I randomized all API keys in this file. You can grab your personal API keys at the corresponding data provider.</li>
 <li>crontab.txt: The output of crontab -l on my Linux web server that is grabbing web content, creating dawn/dusk and Rotten Tomatoes RSS feeds and placing them in the Linux web server for Magic Mirror to grab.</li>
-<li>create_tom_rss.sh: Very ugly bash commands to curl rottentomatoes.com/browse/top-dvd-streaming/ and format the results into something resembling a RSS feed.</li>
+<li>create_tom_rss.sh: Very ugly bash commands to curl rottentomatoes.com/browse/top-dvd-streaming/ and format the results into something resembling a RSS feed. I hacked away at an actual RSS feed until I found the minimum fields necessary.</li>
 <li>tomatoes.xml.head: Used to build the RSS file in create_tom_rss.sh.</li>
 <li>dawn_dusk.sh: Another very ugly bash commands to lynx -dump gaisma.com and format the Dawn/Dusk values as an RSS feed.</li>
 </ul>
