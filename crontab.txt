@@ -1,0 +1,10 @@
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ luckybackup entries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0 0 * * *	env DISPLAY=:0 /usr/bin/luckybackup --silent --skip-critical /home/dennis/.luckyBackup/profiles/default.profile > /home/dennis/.luckyBackup/logs/default-LastCronLog.log 2>&1
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ end of luckybackup entries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Weather RSS 
+# 0,15,30,45 * * * * /media/mybook/create_xml.sh 2>&1
+# Dawn/Dusk RSS twice a day
+0 0,12 * * * /home/dennis/dawn_dusk.sh 2>&1
+# Rotten Tomatoes DVDs once a day - Seems to update on Mondays
+# 0 * * * * /home/dennis/MagicMirror2/create_tomato.sh 2>&1
+0 * * * * /home/dennis/create_tom_rss.sh 2>&1
